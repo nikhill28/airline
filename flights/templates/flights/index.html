@@ -1,0 +1,12 @@
+{% extends "flights/layout.html" %}
+
+{% block content %}
+
+<h1>List of Flights</h1>
+<ul>
+  {% for i in flights %}
+    <li>{{ i.id }}:{{ i.origin }} to {{ i.destination }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
