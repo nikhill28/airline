@@ -1,0 +1,13 @@
+{% extends "users/layout.html" %}
+
+{% block content %}
+
+<p>U have sucesfuly logged in </p>
+
+
+<h1>Logout</h1>
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %} {# For Django, include this line to prevent CSRF attacks #}
+        <input type="submit" value="Logout">
+    </form>
+{% endblock  %}

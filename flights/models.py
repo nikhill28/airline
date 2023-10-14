@@ -21,3 +21,5 @@ class Flight(models.Model):
 
 # drf __str__ reprsents a string representation of a 
 #Foreing key -one to many, referenec to another table
+
+#inside we can shell insert the datas, python3 manage.py shell tehn print
